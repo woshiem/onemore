@@ -1,0 +1,160 @@
+@import url(../css/style.css);
+
+
+.iletisim-header h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.70);
+    font-size: 50px;
+    margin-top: 15px;
+}
+
+.iletisim-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px  180px 100px 180px;
+    flex-direction: column;
+
+}
+
+.iletisim-tel{
+    color: rgba(0, 0, 0, 0.70);
+}
+
+.iletisim-tel i{
+    font-size: 2rem;
+}
+
+.iletisim-tel h4{
+    font-size: 1.7rem;
+    margin-top: 10px;
+}
+
+
+.iletisim-options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin-bottom: 50px;
+    gap: 30px;
+}
+
+.iletisim-options button{
+    font-size: 1.5rem;
+}
+
+#button-wp{
+    font-size: 1.2rem;
+    border-width: 2px;
+    border-color: hsl(123, 49%, 35%);
+    color: hsl(123, 49%, 35%);
+    border-style: solid;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px hsl(123, 49%, 35%);
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#button-wp:hover{
+    background-color: hsl(123, 49%, 35%);
+    color: white;
+    transition: ease 0.3s;
+}
+
+
+.iletisim-top{
+    display: flex;
+    gap: 160px;
+    background-color: white;
+    padding: 30px 200px;
+    padding-bottom: 0;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.iletisim-social h3{
+    margin-bottom: 25px;
+    color: rgba(0, 0, 0, 0.70);
+}
+
+
+.iletisim-icon-blocks{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+
+.iletisim-main-icons{
+    display: flex;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 20px;
+    
+}
+
+.iletisim-main-icons p{
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.70);
+}
+
+.iletisim-main-icons i{
+    font-size: 4.5rem;
+    margin-bottom: 10px;
+}
+
+.iletisim-main-icons:hover{
+    box-shadow: #161616 0px 0px 5px;
+    transition: ease 0.2s;
+}
+
+@media only screen and (max-width: 1300px){
+
+    .iletisim-container{
+        padding: 20px 30px;
+    }
+
+    .iletisim-top{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 40px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+
+    .iletisim-icon-blocks{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .iletisim-icon-blocks i{
+        font-size: 3rem;
+    }
+    .iletisim-icon-blocks p{
+        font-size: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 450px){
+
+    .iletisim-header h1{
+        font-size: 40px;
+    }
+}

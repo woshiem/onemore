@@ -1,0 +1,139 @@
+/* styles.css */
+.slider-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+    background-color: #ffffff1a;
+    flex-direction: column;
+    position: relative;
+}
+
+#slider {
+    width: 100%;
+    max-width: 700px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transition: left 0.5s ease;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slide.active {
+    left: 0;
+}
+
+.slide.prev {
+    left: -100%;
+}
+
+.slide.next {
+    left: 100%;
+}
+
+.slider-all button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    font-size: 1.3rem;
+    background-color: hsl(205, 45%, 26%);
+    color: white;
+    cursor: pointer;
+    width: auto;
+    border-radius: 20px;
+    padding: 10px;
+    border-width: 5px;
+    border-color: black;
+    outline: none;
+    z-index: 10;
+    margin: 0 20px;
+}
+
+.slider-all button:hover{
+    background-color: hsl(205, 45%, 46%);
+}
+
+.slider-all button:active{
+    background-color: hsl(205, 45%, 66%);
+}
+
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+#indicators {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: hsl(120, 100%, 50%);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+.dot.active {
+    background-color: hsl(120, 100%, 20%);
+}
+
+.dot:hover {
+    background-color: hsl(120, 100%, 35%);
+}
+
+@media only screen and (max-width: 950px){
+
+    .slider-all button {
+        top: 100%;
+    }
+
+    .slide img {
+        padding: 50px 0;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+
+    .slider-all button {
+        font-size: 1rem;
+        top: 88%;
+    }
+
+    
+.slide img {
+    padding: 30px 30px;
+}
+
+}

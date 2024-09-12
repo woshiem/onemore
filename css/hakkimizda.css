@@ -1,0 +1,117 @@
+.main{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.main h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.70);
+    font-size: 50px;
+    margin-top: 15px;
+}
+
+.about-type{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-type p{
+    color: rgba(0, 0, 0, 0.70);
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+.about-type h5{
+    color: rgba(0, 0, 0, 0.70);
+    font-size: 1.4rem;
+}
+
+
+
+.about-container{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.about-type{
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.about-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-photo img{
+    width: 650px;
+    min-width: 400px;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 150px;
+    margin: 20px 0;
+    margin-left: 100px;
+    margin-right: 50px;
+    
+}
+
+#button-wp{
+    font-size: 1.2rem;
+    border-width: 2px;
+    border-color: hsl(123, 49%, 35%);
+    color: hsl(123, 49%, 35%);
+    border-style: solid;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px hsl(123, 49%, 35%);
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+#button-wp:hover{
+    background-color: hsl(123, 49%, 35%);
+    color: white;
+    transition: ease 0.3s;
+}
+
+@media only screen and (max-width: 900px){
+
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        margin: 80px 0;
+        padding: 0 40px;
+    }
+
+    .about-type{
+        margin: 0;
+        padding: 0;
+    }
+
+    .about-photo img{
+        margin: 0;
+        padding: 0;
+        width: 350px;
+        margin-top: 20px;
+        min-width: 200px;
+        max-width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 450px){
+
+
+    .main h1{
+        font-size: 40px;
+    }
+}

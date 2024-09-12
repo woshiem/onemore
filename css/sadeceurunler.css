@@ -1,0 +1,106 @@
+
+.main h1{
+    
+    color: #161616;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.urun-block .urunler button{
+    display: block;
+    font-size: 1.3rem;
+    background-color: hsl(205, 45%, 26%);
+    color: white;
+    cursor: pointer;
+    width: auto;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    border-width: 5px;
+    border-color: black;
+    outline: auto;
+}
+
+
+
+.urun-block .urunler button:hover{
+    background-color: hsl(205, 45%, 46%);
+}
+
+.urun-block .urunler button:active{
+    background-color: hsl(205, 45%, 66%);
+}
+
+.urunler img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.urunler{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 0px 20px 0px;
+    width: calc(25% - 20px);
+    box-shadow: 0 0 3px rgb(0, 0, 0);
+    margin-bottom: 40px;
+}
+
+
+
+.urunler h5{
+    align-self: flex-start;
+    color: rgba(0, 0, 0, 0.70);
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.urun-block{
+    display: flex;
+    justify-content: flex-start;
+    padding: 40px;
+    flex-wrap: wrap;
+    gap: 26px;
+}
+
+@media only screen and (max-width: 1050px){
+
+
+
+    .urun-block{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .urunler{
+        min-width: 45%;
+        max-width: 49%;
+
+    }
+
+}
+
+@media only screen and (max-width: 800px){
+
+
+    .urunler{
+        min-width: 90%;
+        width: 100%;
+
+    }
+
+    .urun-block{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+}
