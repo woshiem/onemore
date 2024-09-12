@@ -119,20 +119,13 @@
 #button-wp{
     font-size: 1rem;
     border-width: 2px;
-    border-color: hsl(123, 49%, 35%);
-    color: hsl(123, 49%, 35%);
+    background-color: hsl(123, 49%, 35%);
+    color: white;
     border-style: solid;
     padding: 15px;
     border-radius: 20px;
-    box-shadow: 0px 0px 5px hsl(123, 49%, 35%);
     margin-top: 20px;
     cursor: pointer;
-}
-
-#button-wp:hover{
-    background-color: hsl(123, 49%, 35%);
-    color: white;
-    transition: ease 0.3s;
 }
 
 
